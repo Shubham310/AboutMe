@@ -28,5 +28,6 @@ export const H2 = styled.h2`
 `;
 
 export const Para = styled.p`
-  font-family: fantasy;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+  line-height: 1.77;
 `;

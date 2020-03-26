@@ -14,4 +14,10 @@ export const containerBoxStyles = css`
   align-items: center;
   width: 240px;
   height: 400px;
+  position: sticky;
+  top: 2em;
+`;
+
+export const Span = styled.span`
+  margin-left: 10px;
 `;

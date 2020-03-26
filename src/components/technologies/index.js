@@ -1,7 +1,20 @@
 import React from 'react';
-import {Container} from './style';
-import {technologies} from './constant';
-import { Heading, H2, Body } from '../introduction/style';
+import {Container, List, Item} from './style';
+import {technologies, tech} from './constant';
+import { Heading, H2, Body, Para } from '../introduction/style';
+import TickIcon from '../../assets/tick.svg';
+
+
+const techItems = () => {
+  return tech.map((tech) => {
+    return (
+      <List>
+        <img src={TickIcon} alt="tickIcon"/>
+        <Item>{tech}</Item>
+      </List>
+    );
+  });
+};
 
 const Technologies = () => {
   return(
@@ -10,7 +23,10 @@ const Technologies = () => {
         <H2>Technologies</H2>
       </Heading>
       <Body>
-        <p>{technologies}</p>
+        <Para>{technologies}</Para>
+        <div>
+          {techItems()}
+        </div>
       </Body>
     </Container>
   );

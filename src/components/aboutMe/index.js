@@ -3,8 +3,7 @@ import {Container, Items, Body} from './style';
 import HamburgerMenu from '../hamburgerMenu';
 import Introduction from '../introduction';
 import Technologies from '../technologies';
-import Education from '../education';
-import Hobbies from '../hobbies';
+import Career from '../career';
 
 const AboutMe = () => {
   return(
@@ -16,8 +15,7 @@ const AboutMe = () => {
         <Body>
           <Introduction />
           <Technologies />
-          <Education />
-          <Hobbies />
+          <Career />
         </Body>
       </Items>
     </Container>
